@@ -22,7 +22,7 @@ func Router(r *gin.Engine) {
 	v1.GET("/post/:id", controller.JWTAuthMiddleware(), controller.PostDetailHandler)
 	v1.GET("/post", controller.JWTAuthMiddleware(), controller.GetPostListHandler)
 	v1.POST("/vote", controller.JWTAuthMiddleware(), controller.PostVote)
-	v1.GET("/post2", controller.GetPostList2Handler)
+	v1.GET("/post2", controller.JWTAuthMiddleware(), controller.GetPostList2Handler)
 	v1.GET("/ping", controller.JWTAuthMiddleware(), func(context *gin.Context) {
 		//如果是登录用户，判断请求头中是否有有效的jwt
 		context.String(http.StatusOK, "pong")

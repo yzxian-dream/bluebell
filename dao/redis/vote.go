@@ -30,6 +30,7 @@ const oneWeekInSecond = 7 * 24 * 3600
 
 var (
 	ErrVoteTimeExpire = errors.New("投票时间已过")
+	ErrVoteRepeat     = errors.New("不允许重复投票")
 )
 
 func CreatePost(postId int64) error {
@@ -54,6 +55,10 @@ func VoteForPost(userId, postId string, direction float64) error {
 	// 2.更新帖子的分数
 	//先查看当前贴子的投票记录
 	olddirection := rdb.ZScore(getRedisKey(KeyPostVotedZSetPrefix+postId), userId).Val()
+	//禁止重复投票
+	if direction == olddirection {
+		return ErrVoteRepeat
+	}
 	var dir float64
 	if direction > olddirection {
 		dir = 1

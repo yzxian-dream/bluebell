@@ -130,25 +130,44 @@ func GetPostListHandler(c *gin.Context) {
 	ResponseSuccess(c, data)
 }
 
-// 升级版帖子接口
-// 获取参数
-// 去redis查询id列表
-// 根据id去数据库查询帖子详细信息
+// GetPostListHandler2 升级版帖子列表接口
+// @Summary 升级版帖子列表接口
+// @Description 可按社区按时间或分数排序查询帖子列表接口
+// @Tags 帖子相关接口
+// @Accept application/json
+// @Produce application/json
+// @Param Authorization header string false "Bearer 用户令牌"
+// @Param object query models.ParamPostList false "查询参数"
+// @Security ApiKeyAuth
+// @Success 200 {object} _ResponsePostList
 func GetPostList2Handler(c *gin.Context) {
 	type ParamPostList struct {
-		Page  int64  `json:"page"`
-		Size  int64  `json:"size"`
-		Order string `json:"order"`
+		Page  int64  `json:"page"`  //页码
+		Size  int64  `json:"size"`  //每页数据量
+		Order string `json:"order"` //排序依据
 	}
 	p := &models.ParamPostList{
 		Page:  1,
 		Size:  10,
 		Order: models.OrderTime,
 	}
-	//请求中的query params获取
+	// 升级版帖子接口
+	// 获取参数
+	// 去redis查询id列表
+	// 根据id去数据库查询帖子详细信息
+	// 请求中的query params获取
 	if err := c.ShouldBindQuery(p); err != nil {
 		zap.L().Error("PostList2Handler with invalid params", zap.Error(err))
 		ResponseError(c, CodeInvalidParams)
+		return
+	}
+	//去redis查询id列表
+	ids, err := redis.GetPostIdsInOrder(p)
+	if err != nil {
+		return
+	}
+	if len(ids) == 0 {
+		zap.L().Warn("redis.GetPostIdsInOrder return 0 data")
 		return
 	}
 	postList, err := mysql.GetPostList2(p)
@@ -157,22 +176,31 @@ func GetPostList2Handler(c *gin.Context) {
 		return
 	}
 	//提前查询好每篇帖子的投票数
-	redis.GetPostVoteData()
+	voteData, err := redis.GetPostVoteData(ids)
+	if err != nil {
+		return
+	}
 	data := make([]*models.ApiPostDetail, 0, len(postList))
-	for _, post := range postList {
+	for idx, post := range postList {
 		user, err := mysql.GetUserByID(fmt.Sprint(post.AuthorId))
 		if err != nil {
 			zap.L().Error("mysql.GetUserByID() failed", zap.String("author_id", fmt.Sprint(post.AuthorId)), zap.Error(err))
 			continue
 		}
-		post.AuthorName = user.UserName
+		//post.AuthorName = user.UserName
 		community, err := mysql.GetCommunityByID(post.CommunityID)
 		if err != nil {
 			zap.L().Error("mysql.GetCommunityByID() failed", zap.String("community_id", fmt.Sprint(post.CommunityID)), zap.Error(err))
 			continue
 		}
-		post.CommunityName = community.CommunityName
-		data = append(data, post)
+		postdtail := &models.ApiPostDetail{
+			AuthorName:    user.UserName,
+			VoteNum:       voteData[idx],
+			CommunityName: community.CommunityName,
+			Post:          post,
+		}
+		//post.CommunityName = community.CommunityName
+		data = append(data, postdtail)
 	}
 	ResponseSuccess(c, data)
 }

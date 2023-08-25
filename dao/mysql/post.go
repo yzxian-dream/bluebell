@@ -58,7 +58,7 @@ func GetPostList(pageNum, size int64) (posts []*models.ApiPostDetail, err error)
 
 }
 
-func GetPostListByIds(ids []string) (postList []*models.ApiPostDetail, err error) {
+func GetPostListByIds(ids []string) (postList []*models.Post, err error) {
 	sqlStr := `select post_id, title, content, author_id, community_id, create_time
 	from post
 	where post_id in (?)
@@ -73,7 +73,7 @@ func GetPostListByIds(ids []string) (postList []*models.ApiPostDetail, err error
 	return
 }
 
-func GetPostList2(p *models.ParamPostList) (posts []*models.ApiPostDetail, err error) {
+func GetPostList2(p *models.ParamPostList) (posts []*models.Post, err error) {
 	ids, err := redis.GetPostIdsInOrder(p)
 	if err != nil {
 		return

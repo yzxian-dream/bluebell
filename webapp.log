@@ -7015,3 +7015,9 @@ X-Nessus: /index.jsp	{"status": 404, "method": "GET", "path": "/console/ HTTP/1.
 2023-07-28T17:55:05.505+0800	DEBUG	controller/vote.go:38	ready to vote
 2023-07-28T17:55:16.869+0800	INFO	logger/logger.go:77	/api/v1/vote	{"status": 400, "method": "POST", "path": "/api/v1/vote", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.32.3", "errors": "", "cost": 17.048824625}
 2023-07-28T17:55:43.708+0800	DEBUG	controller/vote.go:38	ready to vote
+2023-08-24T22:34:31.858+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-24T22:34:31.859+0800	DEBUG	webapp/main.go:35	logger init success
+2023-08-24T22:34:31.903+0800	DEBUG	webapp/main.go:42	mysql init success
+2023-08-24T22:34:34.468+0800	DEBUG	webapp/main.go:49	redis init success
+2023-08-24T22:36:51.668+0800	INFO	logger/logger.go:77	/api/v1/post2	{"status": 200, "method": "GET", "path": "/api/v1/post2", "query": "page=1&size=2&order=time", "ip": "::1", "user-agent": "PostmanRuntime/7.32.3", "errors": "", "cost": 0.108599}
+2023-08-24T22:37:22.396+0800	INFO	logger/logger.go:77	/api/v1/post2	{"status": 200, "method": "GET", "path": "/api/v1/post2", "query": "page=1&size=2&order=time", "ip": "::1", "user-agent": "PostmanRuntime/7.32.3", "errors": "", "cost": 3.55807825}
