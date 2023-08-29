@@ -13,6 +13,7 @@ type Post struct {
 }
 type ApiPostDetail struct {
 	*Post
+	VoteNum       int64  `json:"vote_num"`
 	AuthorName    string `json:"author_name"`
 	CommunityName string `json:"community_name"`
 }
