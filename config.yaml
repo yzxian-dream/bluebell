@@ -1,10 +1,10 @@
-name: "webapp"
+name: "bluebell"
 mode: "dev"
 port: 8080
 version: "v0.1.81"
 log:
   level: "debug"
-  filename: "webapp.log"
+  filename: "bluebell.log"
   max_size: 200
   max_age: 30
   max_backups: 7

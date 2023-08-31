@@ -1,0 +1,90 @@
+2023-08-31T16:02:58.639+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:02:58.640+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:02:58.642+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:02:58.650+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:03:03.406+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:03:03.407+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:03:03.409+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:03:03.417+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:03:41.234+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:03:41.234+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:03:41.238+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:03:41.252+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:04:38.394+0800	INFO	bluebell/main.go:100	Shutdown Server ...
+2023-08-31T16:04:38.394+0800	INFO	bluebell/main.go:109	Server exiting
+2023-08-31T16:04:40.802+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:04:40.802+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:04:40.805+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:04:40.818+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:04:47.560+0800	INFO	logger/logger.go:77	/	{"status": 200, "method": "GET", "path": "/", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.001434333}
+2023-08-31T16:04:47.582+0800	INFO	logger/logger.go:77	/static/css/app.50fb5caf.css	{"status": 404, "method": "GET", "path": "/static/css/app.50fb5caf.css", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000098625}
+2023-08-31T16:04:47.583+0800	INFO	logger/logger.go:77	/static/js/app.cef466e0.js	{"status": 404, "method": "GET", "path": "/static/js/app.cef466e0.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000018}
+2023-08-31T16:04:47.588+0800	INFO	logger/logger.go:77	/static/js/chunk-vendors.57f9e9d6.js	{"status": 404, "method": "GET", "path": "/static/js/chunk-vendors.57f9e9d6.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000019917}
+2023-08-31T16:04:50.226+0800	INFO	logger/logger.go:77	/	{"status": 200, "method": "GET", "path": "/", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.00039325}
+2023-08-31T16:04:50.236+0800	INFO	logger/logger.go:77	/static/css/app.50fb5caf.css	{"status": 404, "method": "GET", "path": "/static/css/app.50fb5caf.css", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000027958}
+2023-08-31T16:04:50.238+0800	INFO	logger/logger.go:77	/static/js/app.cef466e0.js	{"status": 404, "method": "GET", "path": "/static/js/app.cef466e0.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000026}
+2023-08-31T16:04:50.239+0800	INFO	logger/logger.go:77	/static/js/chunk-vendors.57f9e9d6.js	{"status": 404, "method": "GET", "path": "/static/js/chunk-vendors.57f9e9d6.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000011292}
+2023-08-31T16:08:37.942+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:08:37.943+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:08:37.946+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:08:37.955+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:08:43.685+0800	INFO	bluebell/main.go:100	Shutdown Server ...
+2023-08-31T16:08:43.690+0800	INFO	bluebell/main.go:109	Server exiting
+2023-08-31T16:09:12.130+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:09:12.131+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:09:12.136+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:09:12.149+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:09:20.083+0800	INFO	logger/logger.go:77	/	{"status": 200, "method": "GET", "path": "/", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.002375917}
+2023-08-31T16:09:20.115+0800	INFO	logger/logger.go:77	/static/css/app.50fb5caf.css	{"status": 404, "method": "GET", "path": "/static/css/app.50fb5caf.css", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000108709}
+2023-08-31T16:09:20.118+0800	INFO	logger/logger.go:77	/static/js/app.cef466e0.js	{"status": 404, "method": "GET", "path": "/static/js/app.cef466e0.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000020166}
+2023-08-31T16:09:20.120+0800	INFO	logger/logger.go:77	/static/js/chunk-vendors.57f9e9d6.js	{"status": 404, "method": "GET", "path": "/static/js/chunk-vendors.57f9e9d6.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000830417}
+2023-08-31T16:10:29.211+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:10:29.212+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:10:29.216+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:10:29.232+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:10:37.650+0800	INFO	logger/logger.go:77	/	{"status": 200, "method": "GET", "path": "/", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.003882708}
+2023-08-31T16:10:37.739+0800	INFO	logger/logger.go:77	/static/js/app.cef466e0.js	{"status": 404, "method": "GET", "path": "/static/js/app.cef466e0.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000045292}
+2023-08-31T16:10:37.739+0800	INFO	logger/logger.go:77	/static/css/app.50fb5caf.css	{"status": 404, "method": "GET", "path": "/static/css/app.50fb5caf.css", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.00000875}
+2023-08-31T16:10:37.739+0800	INFO	logger/logger.go:77	/static/js/chunk-vendors.57f9e9d6.js	{"status": 404, "method": "GET", "path": "/static/js/chunk-vendors.57f9e9d6.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000242292}
+2023-08-31T16:11:14.485+0800	INFO	bluebell/main.go:100	Shutdown Server ...
+2023-08-31T16:11:14.486+0800	INFO	bluebell/main.go:109	Server exiting
+2023-08-31T16:11:16.856+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:11:16.859+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:11:16.861+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:11:16.877+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:11:19.422+0800	INFO	logger/logger.go:77	/	{"status": 200, "method": "GET", "path": "/", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.002759083}
+2023-08-31T16:11:19.458+0800	INFO	logger/logger.go:77	/static/js/app.cef466e0.js	{"status": 404, "method": "GET", "path": "/static/js/app.cef466e0.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000015208}
+2023-08-31T16:11:19.460+0800	INFO	logger/logger.go:77	/static/js/chunk-vendors.57f9e9d6.js	{"status": 404, "method": "GET", "path": "/static/js/chunk-vendors.57f9e9d6.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.002326}
+2023-08-31T16:11:19.461+0800	INFO	logger/logger.go:77	/static/css/app.50fb5caf.css	{"status": 404, "method": "GET", "path": "/static/css/app.50fb5caf.css", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000007625}
+2023-08-31T16:16:11.180+0800	INFO	bluebell/main.go:100	Shutdown Server ...
+2023-08-31T16:16:11.181+0800	INFO	bluebell/main.go:109	Server exiting
+2023-08-31T16:16:13.862+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:16:13.862+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:16:13.865+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:16:13.876+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:16:18.582+0800	INFO	logger/logger.go:77	/	{"status": 200, "method": "GET", "path": "/", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000652542}
+2023-08-31T16:16:18.605+0800	INFO	logger/logger.go:77	/static/js/app.cef466e0.js	{"status": 404, "method": "GET", "path": "/static/js/app.cef466e0.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000000625}
+2023-08-31T16:16:18.605+0800	INFO	logger/logger.go:77	/static/js/chunk-vendors.57f9e9d6.js	{"status": 404, "method": "GET", "path": "/static/js/chunk-vendors.57f9e9d6.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000000416}
+2023-08-31T16:16:18.605+0800	INFO	logger/logger.go:77	/static/css/app.50fb5caf.css	{"status": 404, "method": "GET", "path": "/static/css/app.50fb5caf.css", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000000167}
+2023-08-31T16:17:01.723+0800	INFO	bluebell/main.go:100	Shutdown Server ...
+2023-08-31T16:17:01.723+0800	INFO	bluebell/main.go:109	Server exiting
+2023-08-31T16:17:04.762+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:17:04.762+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:17:04.765+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:17:04.780+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:17:09.721+0800	INFO	logger/logger.go:77	/	{"status": 200, "method": "GET", "path": "/", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000885208}
+2023-08-31T16:17:09.750+0800	INFO	logger/logger.go:77	/static/js/app.cef466e0.js	{"status": 200, "method": "GET", "path": "/static/js/app.cef466e0.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.014438917}
+2023-08-31T16:17:09.751+0800	INFO	logger/logger.go:77	/static/css/app.50fb5caf.css	{"status": 200, "method": "GET", "path": "/static/css/app.50fb5caf.css", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.013511542}
+2023-08-31T16:17:09.751+0800	INFO	logger/logger.go:77	/static/js/chunk-vendors.57f9e9d6.js	{"status": 200, "method": "GET", "path": "/static/js/chunk-vendors.57f9e9d6.js", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.013711416}
+2023-08-31T16:17:09.764+0800	INFO	logger/logger.go:77	/static/js/app.cef466e0.js.map	{"status": 200, "method": "GET", "path": "/static/js/app.cef466e0.js.map", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000892875}
+2023-08-31T16:17:09.765+0800	INFO	logger/logger.go:77	/static/js/chunk-vendors.57f9e9d6.js.map	{"status": 200, "method": "GET", "path": "/static/js/chunk-vendors.57f9e9d6.js.map", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.001506542}
+2023-08-31T16:17:09.778+0800	INFO	logger/logger.go:77	/api/v1/posts2	{"status": 404, "method": "GET", "path": "/api/v1/posts2", "query": "page=1&order=time", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000000291}
+2023-08-31T16:17:09.778+0800	INFO	logger/logger.go:77	/static/img/search.8e85063d.png	{"status": 200, "method": "GET", "path": "/static/img/search.8e85063d.png", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000479416}
+2023-08-31T16:17:09.778+0800	INFO	logger/logger.go:77	/static/img/logo.da56125f.png	{"status": 200, "method": "GET", "path": "/static/img/logo.da56125f.png", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000762125}
+2023-08-31T16:17:09.788+0800	INFO	logger/logger.go:77	/static/img/avatar.7b0a9835.png	{"status": 200, "method": "GET", "path": "/static/img/avatar.7b0a9835.png", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36", "errors": "", "cost": 0.000344541}
+2023-08-31T16:53:49.703+0800	INFO	logger/logger.go:47	init zap logger success
+2023-08-31T16:53:49.704+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-08-31T16:53:49.728+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-08-31T16:53:49.748+0800	DEBUG	bluebell/main.go:63	redis init success
+2023-08-31T16:53:52.734+0800	INFO	bluebell/main.go:100	Shutdown Server ...
+2023-08-31T16:53:52.734+0800	INFO	bluebell/main.go:109	Server exiting
