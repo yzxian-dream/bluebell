@@ -1,0 +1,28 @@
+# yaml 配置
+version: "3.7"
+services:
+  mysql-test:
+    image: "mysql:8.0.19"
+    platform: linux/amd64
+    ports:
+      - "33061:3306"
+    command: "--default-authentication-plugin=mysql_native_password --init-file /data/application/init.sql"
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "bluebell"
+      MYSQL_PASSWORD: "123456"
+    volumes:
+      - ./init.sql:/data/application/init.sql
+  redis-test:
+    image: "redis:5.0.7"
+    ports:
+      - "26379:6379"
+  bluebell_app:
+    build: .
+    #等前面两个起起来之后在起bluebell项目,要先mysql/redis 初始化，初始化之后才能运行这个项目
+    command: sh -c "./wait-for.sh mysql-test:3306 redis-test:6379 -- ./bluebell_app ./config.yaml"
+    depends_on:
+      - mysql-test
+      - redis-test
+    ports:
+      - "8888:8080"

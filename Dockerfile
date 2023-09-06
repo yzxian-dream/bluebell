@@ -21,14 +21,21 @@ COPY . .
 RUN go build -o bluebell_app .
 
 #分阶段构建
-#创建一个小镜像
+###################
+# 接下来创建一个小镜像
+###################
 FROM scratch
-
+#COPY ./wait-for.sh /
 COPY ./templates /templates
 COPY ./static /static
 COPY config.yaml .
 
 #从builder镜像中把拷贝到当前目录
 COPY --from=builder /build/bluebell_app /
-
+#RUN set -eux; \
+#	apt-get update; \
+#	apt-get install -y \
+#		--no-install-recommends \
+#		netcat; \
+#        chmod 755 wait-for.sh
 ENTRYPOINT ["/bluebell_app"]
