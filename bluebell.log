@@ -199,3 +199,7 @@
 2023-09-04T14:00:34.585+0800	INFO	logger/logger.go:47	init zap logger success
 2023-09-04T14:00:34.586+0800	DEBUG	bluebell/main.go:49	logger init success
 2023-09-04T14:00:38.546+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-09-06T17:26:37.132+0800	INFO	logger/logger.go:47	init zap logger success
+2023-09-06T17:26:37.133+0800	DEBUG	bluebell/main.go:49	logger init success
+2023-09-06T17:26:41.623+0800	DEBUG	bluebell/main.go:56	mysql init success
+2023-09-06T17:26:41.631+0800	DEBUG	bluebell/main.go:63	redis init success
